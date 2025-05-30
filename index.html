@@ -1,0 +1,102 @@
+       <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoseph T/mariyam - Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Using Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* A lighter, softer blue-gray background */
+            color: #334155; /* Darker slate text for better contrast */
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); /* Blue to Purple gradient */
+        }
+        .section-title {
+            border-bottom: 3px solid #3b82f6; /* Blue accent */
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-be }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Lighter track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6; /* Blue thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb; /* Darker blue on hover */
+        }
+        /* Add a subtle animation to section titles on load/scroll into view */
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition duration-300">Yoseph T/mariyam</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 transition duration-300 rounded-md px-3 py-2">About</a>
+                </div>
+        </nav>
+    </header>
+
+    <section class="hero-section text-white py-20 md:py-32 rounded-b-xl shadow-xl">
+        <div class="container mx-auto px-6 text-center">
+            <img src="https://placehold.co/150x150/FFFFFF/3B82F6?text=YT" alt="Yoseph T/mariyam's Profile Picture" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full mb-6 border-4 border-white shadow-lg">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fadeInUp">Hi, I'm Yoseph T/mariyam</h1>
+            <p class="text-xl md:text-2xl mb-8 animate-fadeInUp" style="animation-delay: 0.2s;">I'm a dedicated Student, passionate about learning and growing.</p>
+            <a href="#about" class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105 animate-fadeInUp" style="animation-delay: 0.4s;">Learn More About Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white rounded-lg shadow-lg my-8 mx-4 md:mx-auto max-w-4xl">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title animate-fadeInUp">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 md:mr-10 text-center">
+                     <img src="https://placehold.co/250x250/E2E8F0/334155?text=Student+Life" alt="A picture representing student life or Yoseph" class="rounded-lg shadow-xl mx-auto" onerror="this.src='https://placehold.co/250x250/E2E8F0/4A5568?text=Image+Error'">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        Hello! I'm Yoseph T/mariyam, currently a student focusing on doing my web disign assignment.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        I am particularly interested in gaming or playing in my basketball team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-800 text-slate-300 py-8 text-center mt-12 rounded-t-lg">
+        <div class="container mx-auto px-6">
+            <p>&copy; <span id="currentYear"></span> Yoseph T/mariyam. All rights reserved.</p>
+            <p class="text-sm">A simple page to share a bit about me.</p>
+             <div class="mt-4 space-x-4">
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
